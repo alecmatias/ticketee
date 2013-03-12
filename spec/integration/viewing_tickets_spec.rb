@@ -6,7 +6,7 @@ feature "Viewing Tickets" do
     Factory(:ticket,
             :project => textmate_2,
             :title => "Make it shiny!",
-            :description => "Gradients! Starburts! Oh my!")
+            :description => "Gradients! Starbursts! Oh my!")
     internet_explorer = Factory(:project, :name => "Internet Explorer")
     Factory(:ticket,
                 :project => internet_explorer,
