@@ -1,5 +1,8 @@
 Ticketee::Application.routes.draw do
-  get "admin/users/index"
+  namespace :admin do
+    root :to => "base#index"
+    resources :users
+  end
 
   devise_for :users
 
