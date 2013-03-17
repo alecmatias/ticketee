@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature "Vewing projects" do
+feature "Viewing projects" do
   scenario "Listing all projects" do
     project = Factory.create(:project, :name => "TextMate 2")
     visit '/'

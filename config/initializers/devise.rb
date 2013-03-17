@@ -85,7 +85,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "b88b270ac641676ba2554f1546d2a9ed5b719900cc35088be2a5c1b7fb939535e3189b0090d129f7ef831aa3bae469664a16b5723d9ca53bf33c108ed611b41d"
+  # config.pepper = "842dffc78d3acf07d0ac64bfeec8ddfc002edf630b50fe92248142a7add9aa8eeea713a1d62ab3df8b7ba6f028f72fea166cb11dae250032330be74157a56d86"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -117,7 +117,7 @@ Devise.setup do |config|
 
   # Options to be passed to the created cookie. For instance, you can set
   # :secure => true in order to force SSL only cookies.
-  # config.rememberable_options = {}
+  # config.cookie_options = {}
 
   # ==> Configuration for :validatable
   # Range for password length. Default is 6..128.

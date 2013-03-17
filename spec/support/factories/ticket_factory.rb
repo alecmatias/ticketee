@@ -4,3 +4,4 @@ FactoryGirl.define do
     description "An example ticket, nothing more"
   end
 end
+

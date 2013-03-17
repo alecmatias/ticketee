@@ -2,8 +2,9 @@ require 'spec_helper'
 
 feature "Editing Projects" do
   before do
+    sign_in_as!(Factory(:admin_user))
     Factory(:project, :name => "TextMate 2")
-    visit '/'
+    visit "/"
     click_link "TextMate 2"
     click_link "Edit Project"
   end

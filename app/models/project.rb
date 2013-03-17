@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
-  attr_accessible :description, :name
+  attr_accessible :name
 
   validates :name, :presence => true
 
-  has_many :tickets, :dependent => :delete_all
+  has_many :tickets
 end

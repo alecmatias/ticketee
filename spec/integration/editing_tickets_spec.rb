@@ -8,6 +8,7 @@ feature "Editing tickets" do
     ticket.update_attribute(:user, user)
     ticket
   end
+
   before do
     sign_in_as!(user)
     visit '/'

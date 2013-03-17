@@ -5,11 +5,12 @@ feature "Creating Tickets" do
     Factory(:project, :name => "Internet Explorer")
     user = Factory(:user, :email => "ticketee@example.com")
     user.confirm!
+
     visit '/'
     click_link "Internet Explorer"
     click_link "New Ticket"
-    message = "You need to sign in or sign up before continuing."
-    page.should have_content(message)
+
+    page.should have_content("You need to sign in or sign up before continuing.")
     fill_in "Email", :with => "ticketee@example.com"
     fill_in "Password", :with => "password"
     click_button "Sign in"
@@ -40,5 +41,4 @@ feature "Creating Tickets" do
     page.should have_content("Ticket has not been created.")
     page.should have_content("Description is too short")
   end
-
 end
