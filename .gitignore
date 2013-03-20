@@ -13,3 +13,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Ctags stuff.
+.tags
+.tags_sorted_by_file
+.DS_Store
