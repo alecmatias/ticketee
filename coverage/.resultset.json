@@ -283,6 +283,7 @@
         null,
         1,
         4,
+        16,
         null,
         null,
         1,
@@ -365,6 +366,7 @@
         1,
         null,
         1,
+        1,
         null
       ],
       "/Users/Alec/repos/ticketee/app/controllers/users_controller.rb": [
@@ -388,8 +390,14 @@
         null,
         null,
         null
+      ],
+      "/Users/Alec/repos/ticketee/app/models/asset.rb": [
+        1,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1363756321
+    "timestamp": 1363759264
   }
 }
