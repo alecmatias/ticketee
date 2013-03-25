@@ -22,8 +22,13 @@ Ticketee::Application.routes.draw do
     :as => :update_user_permissions
 
   root :to => "projects#index"
+
   resources :projects do
-    resources :tickets
+    resources :tickets do
+      collection do
+        get :search
+      end
+    end
   end
 
   resources :tickets do
